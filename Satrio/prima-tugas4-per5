@@ -1,0 +1,20 @@
+int cek(int bil) {
+  if (bil > 1) {
+    return (ambil(bil, bil) == 2);
+  } else
+    return false;
+}
+
+int main() {
+
+  int bil;
+  cout << "Masukan Bilangan : ";
+  cin >> bil;
+
+  if (cek(bil)) {
+    cout << "Bilangan Prima" << endl;
+  } else {
+    cout << "Bukan Bilangan Prima" << endl;
+  }
+  return 0;
+}
