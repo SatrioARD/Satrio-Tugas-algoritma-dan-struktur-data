@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int nilai[5],batas, cari, hasil;
+  cout<< "Masukan Banyaknya Bilangan= ";
+  cin>>batas;
+  cout<<endl<<endl;
+  for(int r = 0; r< batas;r++){
+    cout<< "Masukan Index ke- "<<r<<"=";
+    cin>>nilai[r];
+  }
+  cout<<endl<<endl;
+  cout<< "Deretan Bilanagan= ";
+  for(int s =0; s< batas;s++){
+    cout<<nilai[s]<<" ";
+  }
+  cout<<endl<< "Masukan Bilangan Yang Akan Dicari= ";
+  cin>>cari;
+  for(int t=0; t<5;t++){
+    if(nilai[t]==cari){
+      cout<< "Bilangan"<<cari<< "Ditemukan Sebanyak 1 \n pada posisi ke= "<< t;
+      break;
+    }else if(cari !=1 && cari !=4 && cari !=5 && cari !=6 && cari !=3){
+      cout<< "Bilangan Tidak Ditemukan";
+      break;
+    }
+  }
+}
