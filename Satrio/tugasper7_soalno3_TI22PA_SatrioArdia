@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int r,jumlah, max, min;
+  int nilai[10]={26,6,89,12,45,67,9,90,54,30};
+
+  for(int r=0; r<10;r++){
+    r=nilai[r];
+
+    if(r==1){
+      min = r;
+      max = r;
+    }
+    else if(min>r){
+      min = r;
+    }
+    else if(max<r){
+      max = r;
+    }
+    else{}
+  }
+  cout<<endl;
+  cout<< "Nilai Terkecil : "<< min <<endl;
+  cout<< "Nilai Terbesar : "<< max <<endl;
+  
+}
